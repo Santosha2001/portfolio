@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # ignoring the Contact.jsx
-src/sections/Contact/Contact.jsx
+# src/sections/Contact/Contact.jsx
