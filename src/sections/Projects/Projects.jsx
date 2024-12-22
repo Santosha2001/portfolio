@@ -1,8 +1,7 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import contactManager from '../../assets/contact-manager.png';
+import vendorManagement from '../../assets/vendor-management.png';
+import smartEducation from '../../assets/smart-education.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -10,29 +9,26 @@ function Projects() {
         <section id="projects" className={styles.container}>
             <h1 className="sectionTitle">Projects</h1>
             <div className={styles.projectsContainer}>
+
                 <ProjectCard
-                    src={viberr}
-                    link="https://github.com/Santosha2001/Spring-Boot-Projects"
-                    h3="Viberr"
-                    p="Streaming App"
+                    src={contactManager}
+                    link="https://github.com/Santosha2001/smart-sontact-manager"
+                    h3="Contact Manager"
+                    p="Smart Contact Manager App"
                 />
+
                 <ProjectCard
-                    src={freshBurger}
-                    link="https://github.com/Santosha2001/Spring-Boot-Projects"
-                    h3="Fresh Burger"
-                    p="Hamburger Restaurant"
+                    src={vendorManagement}
+                    link="https://github.com/Santosha2001/Projects/tree/main/vmanager"
+                    h3="Management"
+                    p="Vendor Management App"
                 />
+
                 <ProjectCard
-                    src={hipsster}
-                    link="https://github.com/Santosha2001/Spring-Boot-Projects"
-                    h3="Hipsster"
-                    p="Glasses Shop"
-                />
-                <ProjectCard
-                    src={fitLift}
-                    link="https://github.com/Santosha2001/Spring-Boot-Projects"
-                    h3="FitLift"
-                    p="Fitness App"
+                    src={smartEducation}
+                    // link="https://github.com/Santosha2001/Spring-Boot-Projects"
+                    h3="Education"
+                    p="Smart Education App"
                 />
             </div>
         </section>
