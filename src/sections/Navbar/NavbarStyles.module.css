@@ -61,7 +61,8 @@
 }
 
 .navbarLink:hover {
-    color: var(--navbar-hover-color);
+    color: #49e9dc;
+    /* Change to desired hover color */
     transform: scale(1.05);
 }
 
