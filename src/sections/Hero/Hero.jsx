@@ -1,7 +1,5 @@
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
@@ -10,9 +8,7 @@ import CV from "../../assets/Santosha_C_2023.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
-
-    const { theme, toggleTheme } = useTheme();
-    const themeIcon = theme === 'light' ? sun : moon;
+    const { theme } = useTheme();
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
@@ -24,7 +20,6 @@ function Hero() {
                     src={heroImg}
                     alt="Profile picture of Santosha C"
                 />
-                <img className={styles.colorMode} src={themeIcon} alt="" onClick={toggleTheme} />
             </div>
 
             {/* information starts */}
@@ -44,7 +39,7 @@ function Hero() {
                 <p>With a passion for developing modern Spring Boot Application and React Applications.</p>
 
                 <a href={CV} target="_blank" download>
-                    <button className="hover" >Resume</button>
+                    <button className="hover">Resume</button>
                 </a>
             </div>
         </section>
